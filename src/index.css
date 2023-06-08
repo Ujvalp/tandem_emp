@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .no-scrollbar::-webkit-scrollbar {
+    background: transparent; /* make scrollbar transparent */
+    -webkit-appearance: none;
+    width: 0;
+    height: 0;
+  }
+
+  .catNav a.active {
+    background: #6f5ff1;
+    color: white;
+    font-weight: 600;
+  }
+
+  .savedNav {
+    background: #6f5ff1;
+    color: white;
+    font-weight: 600;
+  }
+
+  .catAll a.active {
+    background: #6f5ff1;
+    color: white;
+    font-weight: 600;
+  }
+}
+
+body {
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  scroll-behavior: smooth;
+}
+
+.mainNav a.active {
+  color: white;
+  transform: scale(1.25);
+  text-decoration: underline;
+}
